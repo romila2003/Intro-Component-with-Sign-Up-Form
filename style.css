@@ -129,7 +129,7 @@ input:focus {
     background-position: right 5% bottom 50%;
 }
 
-#fname-text, #lname-text, #email-text, #password-text {
+.text {
     font-style: italic;
     color: var(--red);
     font-size: 0.75rem;
