@@ -1,54 +1,28 @@
-const form = document.querySelector(".form-field");
-const email = document.getElementById("email");
-const firstName = document.getElementById("fname");
-const lastName = document.getElementById("lname");
-const password = document.getElementById("password");
 const submit = document.getElementById("submit");
-const emailText = document.getElementById("email-text");
-const firstNameText = document.getElementById("fname-text");
-const lastNameText = document.getElementById("lname-text");
-const passwordText = document.getElementById("password-text");
 
 let emailFormat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+let name = ["First Name cannot be empty", "Last Name cannot be empty", "Looks like this is not an email", "Password cannot be empty"];
 
 submit.addEventListener("click", () => {
-    if(firstName.value === "") {
-        form.classList.add("invalid");
-        form.classList.remove("valid");
-        firstNameText.innerHTML = "First Name cannot be empty";
-        firstName.classList.toggle("error");
-    } else {
-        form.classList.add("valid");
-        form.classList.remove("invalid");
+    const input = document.querySelectorAll("input");
+    const text = document.querySelectorAll(".text");
+
+    for(let i = 0; i < input.length; i++) {
+        for(let i = 0; i < text.length; i++) {
+           if(input[i].value === "") {
+            input[i].classList.add("error");
+            text[i].innerHTML = name[i];
+        } else {
+            input[i].classList.remove("error");
+            text[i].innerHTML = "";
+        } 
     }
 
-    if(lastName.value === "") {
-        form.classList.add("invalid");
-        form.classList.remove("valid");
-        lastNameText.innerHTML = "Last Name cannot be empty";
-        lastName.classList.toggle("error");
+    if(input[2].value.match(emailFormat)) {
+        input[2].classList.remove("error");
     } else {
-        form.classList.add("valid");
-        form.classList.remove("invalid");
+        input[2].classList.add("error");
+        text[2].innerHTML = name[2];
     }
-
-    if(email.value.match(emailFormat)) {
-        form.classList.add("valid");
-        form.classList.remove("invalid");
-    } else {
-        form.classList.remove("valid");
-        form.classList.add("invalid");
-        emailText.innerHTML = "Looks like this is not an email";
-        email.classList.toggle("error");
-    }
-
-    if(password.value === "") {
-        form.classList.add("invalid");
-        form.classList.remove("valid");
-        passwordText.innerHTML = "Last Name cannot be empty";
-        password.classList.toggle("error");
-    } else {
-        form.classList.add("valid");
-        form.classList.remove("invalid");
-    }
+} 
 });
