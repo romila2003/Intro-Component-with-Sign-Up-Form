@@ -25,25 +25,25 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 # Mobile Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Intro-Component-with-Sign-Up-Form/blob/main/Mobile%20preview.PNG)
 
 # Mobile Preview - active
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Intro-Component-with-Sign-Up-Form/blob/main/Mobile%20preview%20-%20active.PNG)
 
 # Desktop Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Intro-Component-with-Sign-Up-Form/blob/main/Desktop%20preview.PNG)
 
 # Desktop Preview - active
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Intro-Component-with-Sign-Up-Form/blob/main/Desktop%20preview%20-%20active.PNG)
 
 
 ### Links
 
- - Source code: []()
- - Live website: []()
+ - Source code: [https://github.com/romila2003/Intro-Component-with-Sign-Up-Form](https://github.com/romila2003/Intro-Component-with-Sign-Up-Form)
+ - Live website: [https://intro-component-with-sign-up-form-main.netlify.app/](https://intro-component-with-sign-up-form-main.netlify.app/)
 
 ## My process
 
