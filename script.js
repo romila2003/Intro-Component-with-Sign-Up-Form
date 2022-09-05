@@ -4,7 +4,8 @@ let emailFormat = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 let name = ["First Name cannot be empty", "Last Name cannot be empty", "Looks like this is not an email", "Password cannot be empty"];
 
 submit.addEventListener("click", () => {
-    const input = document.querySelectorAll("input");
+    const email = document.getElementById("email");
+    const input = document.querySelectorAll(".loop");
     const text = document.querySelectorAll(".text");
 
     for(let i = 0; i < input.length; i++) {
@@ -18,11 +19,11 @@ submit.addEventListener("click", () => {
         } 
     }
 
-    if(input[2].value.match(emailFormat)) {
-        input[2].classList.remove("error");
+    if(email.value.match(emailFormat)) {
+        email.classList.remove("error");
     } else {
-        input[2].classList.add("error");
-        text[2].innerHTML = name[2];
+        email.classList.add("error");
+        email.innerHTML = name[2];
     }
 } 
 });
