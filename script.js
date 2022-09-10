@@ -19,7 +19,7 @@ submit.addEventListener("click", () => {
             
         if (i == 2 &&  !input[2].value.match(emailFormat)){
             input[i].classList.add("error");
-            text.innerHTML = "Looks like this is not an email";
+            text[i].innerHTML = "Looks like this is not an email";
         }    
     }
  
