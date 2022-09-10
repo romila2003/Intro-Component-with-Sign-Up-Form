@@ -22,5 +22,5 @@ submit.addEventListener("click", () => {
             text[i].innerHTML = "Looks like this is not an email";
         }    
     }
- 
+  }
 });
