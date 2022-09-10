@@ -16,13 +16,18 @@ submit.addEventListener("click", () => {
             input[i].classList.remove("error");
             text[i].innerHTML = "";
         } 
+            
+        if (i == 2 &&  !emailFormat(input[i].value)){
+            input[i].classList.add("error");
+            text[i].innerHTML = name[i]
+        }    
     }
 
-    if(input[2].value.match(emailFormat)) {
-        input[2].classList.remove("error");
-    } else {
-        input[2].classList.add("error");
-        text[2].innerHTML = name[2];
-    }
+//     if(input[2].value.match(emailFormat)) {
+//         input[2].classList.remove("error");
+//     } else {
+//         input[2].classList.add("error");
+//         text[2].innerHTML = name[2];
+//     }
 } 
 });
