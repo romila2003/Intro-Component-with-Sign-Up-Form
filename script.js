@@ -17,7 +17,7 @@ submit.addEventListener("click", () => {
             text[i].innerHTML = "";
         } 
             
-        if (i == 2 &&  !emailFormat(input[i].value)){
+        if (i == 2 &&  !input[2].value.match(emailFormat)){
             input[i].classList.add("error");
             text[i].innerHTML = name[i]
         }    
